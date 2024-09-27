@@ -6,7 +6,9 @@
     <p class="data" id="welcome">welcome to MailStorm</p>  
     <button type="submit" class="submit">sign-up</button>
     <p>Already have an account:</p>
-    <a href="/sign-in" style="margin-top:10px; color:#FFFFFF;">sign in</a>
+    <router-link :to="{name: 'sign-in'}">
+        <span style="color:white; text-decoration:underline;">sign-in</span>
+    </router-link>
   </div>
 
   <div class="vl"></div> 
