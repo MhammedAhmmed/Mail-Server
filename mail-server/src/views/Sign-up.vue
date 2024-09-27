@@ -55,17 +55,21 @@ export default {
     };
   },
     methods: {
-       
+      ...mapActions(['saveUser']),
        handleSubmit()
        {
            this.passwordConsistencyError=this.password!==this.Repassword?'password must be equal to this field':'';
            this.passwordLenError=this.password.length<8?'password length is smaller than 8':'';
            this.mailError = this.email.includes('@MailStorm') ? '' : 'Email must use @MailStorm domain';
-      
+           //TODO:Make sure from backend
+
                 if (!this.passwordConsistencyError && !this.passwordLenError && !this.mailError) {
-                    console.log('Form is valid. Name:', this.name, 'Email:', this.email);
+                            const userData = {
+                             email: this.email
+                            };
+                      this.saveUserData(userData);
                 }
-      }
+       }
 
     }
 

@@ -43,11 +43,16 @@ export default {
     };
   },
     methods: {
+      ...mapActions(['saveUser']),
        
        handleSubmit()
        {
         console.log('Form is valid. Name:', this.email);
-      }
+             const userData = {
+                   email: this.email
+                       };
+              this.saveUserData(userData);
+       }
 
     }
 

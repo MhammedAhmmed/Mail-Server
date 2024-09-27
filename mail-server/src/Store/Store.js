@@ -5,14 +5,13 @@ import {createStore} from 'vuex';
 export const store= createStore({
     state:{
          user:{
-            name:'',
             email:''
          }
 
     },
     mutations:{
         setUser(state,userData){
-           state.user.name=userData.name;
+           
            state.user.email=userData.email;
         }
     },
