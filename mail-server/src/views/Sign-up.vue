@@ -1,8 +1,5 @@
 <template>
   
-
-  
-
    <form id="form">
        <div  id="welcomeDiv">
            <img src="../assets/MailStorm.webp" id="image">
