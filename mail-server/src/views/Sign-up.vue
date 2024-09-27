@@ -4,10 +4,9 @@
        <div  id="welcomeDiv">
            <img src="../assets/MailStorm.webp" id="image">
            <p class="data" id="welcome">welcome to MailStorm</p>  
-           <p class="data">Sign up</p>
            <button class="submit">sign-up</button>
            <p>Already have accout:</p>
-           <a href="#" style="margin-top:10px; color:#FFFFFF;">sign in </a>
+           <a href="/sign-in" style="margin-top:10px; color:#FFFFFF;">sign in </a>
        </div>
 
       <div class="vl"></div> 

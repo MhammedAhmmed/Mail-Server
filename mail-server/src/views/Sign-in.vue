@@ -4,7 +4,6 @@
        <div  id="welcomeDiv">
            <img src="../assets/MailStorm.webp" id="image">
            <p class="data" id="welcome">welcome back</p>  
-           <p class="data">Sign in</p>
            <button class="submit">sign-in</button>
        </div>
 
