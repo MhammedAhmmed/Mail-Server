@@ -12,8 +12,8 @@
     <div id="fields">
 
        <div class="field">
-           <label class="data">name or email: </label>
-           <input v-model="name" class="inputs" type="text" required placeholder="Ahmed@MailStorm.com">
+           <label class="data">email: </label>
+           <input v-model="email" class="inputs" type="text" required placeholder="Ahmed@MailStorm.com">
       </div>
 
        <div class="field">
@@ -38,7 +38,7 @@
 export default {
     data() {
     return {
-      name: '',
+      email: '',
       password:''
     };
   },
@@ -46,7 +46,7 @@ export default {
        
        handleSubmit()
        {
-        console.log('Form is valid. Name:', this.name);
+        console.log('Form is valid. Name:', this.email);
       }
 
     }
