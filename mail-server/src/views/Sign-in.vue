@@ -1,6 +1,6 @@
 <template>
   
-   <form id="form">
+   <form  @submit.prevent="handleSubmit()" id="form">
        <div  id="welcomeDiv">
            <img src="../assets/MailStorm.webp" id="image">
            <p class="data" id="welcome">welcome back</p>  
@@ -13,12 +13,12 @@
 
        <div class="field">
            <label class="data">name or email: </label>
-           <input class="inputs" type="text" required placeholder="Ahmed@MailStorm.com">
+           <input v-model="name" class="inputs" type="text" required placeholder="Ahmed@MailStorm.com">
       </div>
 
        <div class="field">
            <label class="data">Password: </label>
-           <input class="inputs" type="password" required placeholder="your password">
+           <input v-model="password" class="inputs" type="password" required placeholder="your password">
        </div>
 
        
@@ -36,6 +36,20 @@
 
 <script>
 export default {
+    data() {
+    return {
+      name: '',
+      password:''
+    };
+  },
+    methods: {
+       
+       handleSubmit()
+       {
+        console.log('Form is valid. Name:', this.name);
+      }
+
+    }
 
 }
 </script>
