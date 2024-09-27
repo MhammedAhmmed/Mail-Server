@@ -2,7 +2,7 @@ import {createStore} from 'vuex';
 //THIS is a single source of truth in vue js
 //We will commit user data here and it will be accessible from any part of project
 
-export const store= createStore({
+const store= createStore({
     state:{
          user:{
             email:''
@@ -18,7 +18,7 @@ export const store= createStore({
     actions:{
        saveUser({commit},userData)
        {
-         commit('serUser',userData);
+         commit('setUser',userData);
        }
     },
     getters:{
@@ -32,3 +32,4 @@ export const store= createStore({
 
 });
 
+export default store;

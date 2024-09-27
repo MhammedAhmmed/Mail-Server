@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 export default {
 
    data() {
@@ -67,7 +68,8 @@ export default {
                             const userData = {
                              email: this.email
                             };
-                      this.saveUserData(userData);
+                      this.saveUser(userData);
+                      console.log("ok");
                 }
        }
 
