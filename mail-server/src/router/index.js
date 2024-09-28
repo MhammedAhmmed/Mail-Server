@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Signup from '../views/Sign-up.vue'
 import Signin from '../views/Sign-in.vue'
+import Inbox from '../views/Inbox.vue'
+import Sent from '../views/Sent.vue'
+import Draft from '../views/Draft.vue'
+import Trash from '../views/Trash.vue'
+import Contacts from '../views/Contacts.vue'
+
 
 const routes = [
   {
@@ -13,6 +19,31 @@ const routes = [
     name:'sign-in',
     component:Signin
   },
+  {
+    path:'/Inbox',
+    name:'Inbox',
+    component:Inbox
+  },
+  {
+    path:'/Sent',
+    name:'Sent',
+    component:Sent
+  },
+  {
+    path:'/Draft',
+    name:'Draft',
+    component:Draft
+  },
+  {
+    path:'/Trash',
+    name:'Trash',
+    component:Trash
+  },
+  {
+    path:'/Contacts',
+    name:'Contacts',
+    component:Contacts
+  }
   
 ]
 

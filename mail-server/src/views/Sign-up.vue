@@ -72,6 +72,7 @@ export default {
                             };
                       this.saveUser(userData);
                       console.log("ok");
+                      this.$router.push({name:'Inbox'});
                 }
        }
 

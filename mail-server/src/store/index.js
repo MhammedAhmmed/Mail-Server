@@ -13,12 +13,20 @@ const store= createStore({
         setUser(state,userData){
            
            state.user.email=userData.email;
+        },
+        removeUser(state)
+        {
+            state.user.email='';
         }
     },
     actions:{
        saveUser({commit},userData)
        {
          commit('setUser',userData);
+       },
+       logOutFromSystem({commit})
+       {
+          commit('removeUser');
        }
     },
     getters:{

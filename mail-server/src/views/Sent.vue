@@ -1,5 +1,5 @@
 <template>
-  <Header name="Contacts"/>
+  <Header name="Sent"/>
   <SideBar/>
 
 </template>

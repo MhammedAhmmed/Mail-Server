@@ -53,6 +53,7 @@ export default {
                    email: this.email
                        };
               this.saveUser(userData);
+              this.$router.push({name:'Inbox'});
        }
 
     }
