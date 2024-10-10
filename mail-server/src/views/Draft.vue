@@ -1,17 +1,16 @@
 <template>
   <Header name="Draft"/>
   <SideBar/>
-  
+  <BodyVue/>
 
 </template>
 
 <script>
-import MailSendingVue from '@/components/MailSending.vue'
 import Header from '../components/Header.vue'
 import SideBar from '../components/SideBar.vue'
-import Filter from '../components/Filter.vue'
+import BodyVue from '@/components/Body.vue'
 export default {
-  components: { Header,SideBar,Filter,MailSendingVue,},
+  components: { Header,SideBar,BodyVue},
   
 }
 </script>

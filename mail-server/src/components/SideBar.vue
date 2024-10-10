@@ -54,8 +54,7 @@ aside
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-     color: #FFFFFF;
-    
+    color: #FFFFFF;
     
 }
 .RLink

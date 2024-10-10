@@ -1,14 +1,16 @@
 <template>
   <Header name="Contacts"/>
   <SideBar/>
-  
+  <BodyVue/>
+
 </template>
 
 <script>
 import Header from '../components/Header.vue'
 import SideBar from '../components/SideBar.vue'
+import BodyVue from '@/components/Body.vue'
 export default {
-  components: { Header,SideBar },
+  components: { Header,SideBar,BodyVue},
   
 }
 </script>
