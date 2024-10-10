@@ -2,16 +2,16 @@
 
    <form @submit.prevent="handleSubmit" id="form">
   <div id="welcomeDiv">
-    <img src="../assets/MailStorm.webp" id="image">
-    <p class="data" id="welcome">welcome to MailStorm</p>  
-    <button type="submit" class="submit">sign-up</button>
-    <p>Already have an account:</p>
-    <router-link :to="{name: 'sign-in'}">
-        <span style="color:white; text-decoration:underline;">sign-in</span>
-    </router-link>
+    
+        <p class="data" id="welcome">welcome to MailStorm</p>  
+        <p>Already have an account:</p>
+        <router-link :to="{name: 'sign-in'}">
+            <span style="color:white; text-decoration:underline;">sign-in</span>
+        </router-link>
+   
+   
   </div>
 
-  <div class="vl"></div> 
 
   <div id="fields">
     <div class="field">
@@ -37,6 +37,7 @@
       <div class="error" v-if="passwordConsistencyError">{{passwordConsistencyError}}</div>
     </div>
   </div>
+   <button type="submit" class="submit">sign-up</button>
 </form>
 
 
@@ -92,24 +93,25 @@ p{
 }
 #form{
     text-align: center;
-    width: 600px;    
+    width: 500px;    
     margin: auto;
-     margin-top:50px ;
+     margin-top:10px ;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #1E3A8A;
     display: flex;  
-    
+    flex-direction: column;
+    justify-content: center;
 }
 .inputs
 {
   width: 100%;
-  padding: 12px 16px;
-  margin: 10px 0;
+  padding: 10px 12px;
+  margin: 2px 0;
   border-radius: 8px;
   border: 1px solid #CBD5E1; 
   background-color: #FFFFFF; 
-  font-size: 16px;
+  font-size: 12px;
   color: #1E3A8A; 
   transition: border 0.3s ease;
 }
@@ -124,7 +126,7 @@ p{
 }
 #welcome
 {
-    margin-top:15px ;
+    margin-top:5px ;
     text-align: center;
 }
 .field
@@ -150,13 +152,13 @@ p{
 }
 #welcomeDiv
 {
-    margin-top: 20px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin-left: 20px;
+    align-items: center;
     color: white;
+    border-bottom: solid;
 }
 #fields
 {
@@ -164,11 +166,6 @@ p{
     flex-direction: column;
     margin-left: 20px;
    
-}
-.vl {
-  margin-left: 10px;  
-  border-left: 1px solid #FFFFFF;
-  justify-self: center;
 }
 .submit
 {

@@ -23,6 +23,7 @@ export default {
         logOUT()
         {
             this.logOutFromSystem();
+           // window.location.href = '/sign-in';
             this.$router.push({name:'sign-in'});
         }
     }

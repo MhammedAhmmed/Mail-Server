@@ -2,13 +2,11 @@
   
    <form  @submit.prevent="handleSubmit()" id="form">
        <div  id="welcomeDiv">
-           <img src="../assets/MailStorm.webp" id="image">
-           <p class="data" id="welcome">welcome back</p>  
-           <button class="submit">sign-in</button>
+           
+            <p class="data" id="welcome">welcome back</p>  
        </div>
 
-      <div class="vl"></div> 
-
+      
     <div id="fields">
 
        <div class="field">
@@ -21,12 +19,9 @@
            <input v-model="password" class="inputs" type="password" required placeholder="your password">
        </div>
 
-       
-
-      
-
     </div>   
       
+      <button class="submit">sign-in</button>
        
        
    </form>
@@ -74,7 +69,7 @@ p{
     text-align: center;
     width: 600px;    
     margin: auto;
-     margin-top:150px ;
+     margin-top:100px ;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #1E3A8A;
@@ -97,16 +92,10 @@ p{
 {
    font-size: 24px;
    color:#FFFFFF;
-  text-align: center;
-  margin-bottom: 30px;
-    
-    
+ 
+  margin-bottom: 20px;
 }
-#welcome
-{
-    margin-top:15px ;
-    text-align: center;
-}
+
 .field
 {
     margin-top: 10px;
@@ -135,8 +124,8 @@ p{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin-left: 20px;
     color: white;
+    text-align: center;
 }
 #fields
 {
@@ -144,11 +133,6 @@ p{
     flex-direction: column;
     margin-left: 20px;
    
-}
-.vl {
-  margin-left: 10px;  
-  border-left: 1px solid #FFFFFF;
-  justify-self: center;
 }
 .submit
 {

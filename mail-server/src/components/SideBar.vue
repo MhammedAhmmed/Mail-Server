@@ -24,9 +24,10 @@
       <i class="fas fa-address-book"></i>
       <p>Contacts</p>
     </router-link>
-    <div @click="AddFolder()" class="link">
-        Add Folder +
-    </div>
+   <router-link class="link" :to="{name:'Folders'}">
+      <i class="fas fa-folder"></i>
+      <p>Folders</p>
+    </router-link>
   </aside>
 </template>
 

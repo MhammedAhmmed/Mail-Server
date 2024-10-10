@@ -6,7 +6,7 @@ import Sent from '../views/Sent.vue'
 import Draft from '../views/Draft.vue'
 import Trash from '../views/Trash.vue'
 import Contacts from '../views/Contacts.vue'
-
+import Folders from '../views/Folders.vue'
 
 const routes = [
   {
@@ -43,6 +43,11 @@ const routes = [
     path:'/Contacts',
     name:'Contacts',
     component:Contacts
+  },
+  {
+    path:'/Folders',
+    name:'Folders',
+    component:Folders
   }
   
 ]
